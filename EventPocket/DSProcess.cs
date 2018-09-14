@@ -17,16 +17,13 @@ namespace EventPocket
                         dsProcess = new DSProcess(process, false);
                         return true;
                     }
-                    else if (process.MainWindowTitle == "DARK SOULS REMASTERED")
+                    else if (process.MainWindowTitle == "DARK SOULS™: REMASTERED")
                     {
                         dsProcess = new DSProcess(process, true);
                         return true;
                     }
                 }
-                catch
-                {
-
-                }
+                catch { }
             }
 
             dsProcess = null;

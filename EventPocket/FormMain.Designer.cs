@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label lblHz;
             System.Windows.Forms.Label lblAttached;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvFlags = new System.Windows.Forms.DataGridView();
             this.dgvFlagsIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -147,6 +148,11 @@
             // nudHertz
             // 
             this.nudHertz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudHertz.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.nudHertz.Location = new System.Drawing.Point(527, 12);
             this.nudHertz.Maximum = new decimal(new int[] {
             120,
@@ -205,6 +211,7 @@
             this.Controls.Add(this.nudHertz);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.llbUpdate);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.Text = "EventPocket";
             this.TopMost = true;
